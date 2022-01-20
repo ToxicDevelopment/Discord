@@ -17,7 +17,7 @@ const router = express.Router();
 
 
 app.set("view engine", "pug");
-app.set("views", path.join(__dirname, "views"));
+app.set(path.join(__dirname));
 
 router.get("/", (req, res) => {
   res.render("Vc.html");
